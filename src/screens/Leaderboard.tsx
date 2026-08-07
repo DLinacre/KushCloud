@@ -39,6 +39,14 @@ export default function Leaderboard({ save, onBack }: Props) {
     if (isCloudLeaderboardConfigured()) void load();
   }, [load]);
 
+  // Live-ish board: refresh every 15s while the screen is open so a friend's
+  // run shows up without leaving and re-entering the screen.
+  useEffect(() => {
+    if (!isCloudLeaderboardConfigured()) return;
+    const timer = setInterval(() => void load(), 15_000);
+    return () => clearInterval(timer);
+  }, [load]);
+
   const submitBest = async () => {
     if (save.stats.bestScore <= 0) return;
     setLoading(true);

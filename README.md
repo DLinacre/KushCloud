@@ -137,3 +137,38 @@ MIT License — See [LICENSE](./LICENSE)
   <img src="https://img.shields.io/badge/No_external_assets-Zero_audio_files-06b6d4?style=flat-square" alt="No external assets" />
 </p>
 
+
+---
+
+## 🏆 Leaderboard — one-time unblock (2 steps, ~5 minutes)
+
+The cloud leaderboard has been broken since v1.1.6 for two account-level
+reasons. The code is already fixed — both steps below are settings, not code.
+
+### Step 1 — Unblock GitHub Actions (deploys & CI)
+Every workflow on this account fails instantly (even a 2-line test job) with
+no logs — that is GitHub blocking Actions at the **account level**, almost
+always a billing/entitlement issue on the account.
+
+1. Go to **github.com/settings/billing** (or Settings → Billing and plans).
+2. Fix any failed payment / settle the plan, or switch to the **Free** plan.
+3. Then trigger a deploy: **Actions → "Deploy Web to GitHub Pages" → Run
+   workflow** (or push any commit — the game auto-redeploys).
+
+Verify: the live game loads at **lin4cre.github.io/KushCloud** with real
+gameplay (the current live build is stale/broken from the blocked deploys).
+
+### Step 2 — Publish the Firebase rules (cross-device leaderboard)
+The Firebase Realtime Database currently returns `Permission denied` (401)
+for both reads and writes — the security rules were never published, so the
+database is deny-all. The correct rules are in the repo:
+[`docs/firebase-database.rules.json`](docs/firebase-database.rules.json).
+
+1. Open **console.firebase.google.com** → project **`kushcloud-25cd5`**.
+2. **Build → Realtime Database → Rules** tab.
+3. Replace everything with the contents of `docs/firebase-database.rules.json`
+   → **Publish**.
+4. Verify: `curl "https://kushcloud-25cd5-default-rtdb.europe-west1.firebasedatabase.app/leaderboards/all.json?orderBy=%22score%22&limitToLast=5"` should return `{}` or entries — not `Permission denied`.
+
+Then play one run on two devices — scores appear within ~15 seconds (the
+leaderboard now auto-refreshes every 15s while open).
