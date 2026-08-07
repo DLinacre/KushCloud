@@ -1,0 +1,36 @@
+name: Publish Firebase Rules
+
+on:
+  workflow_dispatch:
+
+# One-click fix for the leaderboard: publishes docs/firebase-database.rules.json
+# to the kushcloud-25cd5 Realtime Database (unlocks public reads + validated
+# writes — the database is currently deny-all because rules were never applied).
+#
+# Setup (once, ~2 minutes):
+#   1. npm i -g firebase-tools
+#   2. firebase login:ci          → prints a long CI token
+#   3. GitHub repo → Settings → Secrets and variables → Actions → New secret:
+#        Name:  FIREBASE_TOKEN
+#        Value: <the token from step 2>
+#   4. Actions → "Publish Firebase Rules" → Run workflow.
+
+permissions:
+  contents: read
+
+jobs:
+  publish-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install Firebase CLI
+        run: npm i -g firebase-tools@latest
+
+      - name: Publish Realtime Database rules
+        run: firebase deploy --only database:rules --token "${{ secrets.FIREBASE_TOKEN }}"

@@ -69,3 +69,19 @@ re-fetches when the Leaderboard screen opens / after a run submits).
 
 Once the rules are published, cross-device leaderboards work immediately — no app
 redeploy required (the code fix here just ensures writes pass validation).
+
+---
+
+## ⚡ One-click option (recommended): publish rules via GitHub Actions
+
+The repo now ships a ready-made workflow: **Actions → "Publish Firebase
+Rules" → Run workflow**.
+
+Setup once (~2 minutes):
+1. `npm i -g firebase-tools` then `firebase login:ci` → prints a token.
+2. GitHub → Settings → Secrets and variables → Actions → **New secret**:
+   `FIREBASE_TOKEN` = that token.
+3. Run the workflow. Done — rules are live, leaderboard works.
+
+(Requires GitHub Actions to be unblocked on this account first — see Step 1
+above; the same billing fix unblocks the game's deploys too.)
