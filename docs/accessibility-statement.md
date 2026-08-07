@@ -32,7 +32,7 @@ We target **WCAG 2.2 Level AA** for all non-game-canvas content (menus, settings
 ## Feedback
 
 We welcome accessibility feedback. If you encounter barriers while using KushCloud, please open an issue:  
-[https://github.com/LIN4CRE/KushCloud/issues](https://github.com/LIN4CRE/KushCloud/issues)
+[https://github.com/DLinacre/KushCloud/issues](https://github.com/DLinacre/KushCloud/issues)
 
 ## Technical Specifications
 

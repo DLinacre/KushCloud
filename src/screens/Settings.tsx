@@ -4,7 +4,7 @@ import { randomName } from "../game/storage";
 import { BUILD_INFO, buildDebugReport, shortCommit } from "../config/buildInfo";
 import { Button, Panel, ScreenShell } from "../ui";
 
-const REPO_URL = "https://github.com/LIN4CRE/KushCloud";
+const REPO_URL = "https://github.com/DLinacre/KushCloud";
 
 interface Props {
   save: SaveData;

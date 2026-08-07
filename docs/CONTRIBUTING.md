@@ -50,7 +50,7 @@ By participating, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md
 ## Development Setup
 ```bash
 # Clone the repository
-git clone https://github.com/LIN4CRE/KushCloud.git
+git clone https://github.com/DLinacre/KushCloud.git
 cd KushCloud
 
 # Install dependencies

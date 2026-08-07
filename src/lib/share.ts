@@ -1,6 +1,6 @@
 import { showToast } from "../ui";
 
-const GAME_URL = "https://lin4cre.github.io/KushCloud/";
+const GAME_URL = "https://dlinacre.github.io/KushCloud/";
 
 /**
  * Render a branded 1200×630 "score card" to a PNG blob for sharing.
@@ -58,7 +58,7 @@ async function renderScoreCard(score: number, isNewBest: boolean, rank?: number)
     // URL chip
     ctx.fillStyle = "#34d399";
     ctx.font = "600 26px ui-monospace, SFMono-Regular, Menlo, monospace";
-    ctx.fillText("lin4cre.github.io/KushCloud", 74, 566);
+    ctx.fillText("dlinacre.github.io/KushCloud", 74, 566);
 
     return await new Promise((res) => c.toBlob((b) => res(b), "image/png"));
   } catch {

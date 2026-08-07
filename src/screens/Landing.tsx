@@ -79,7 +79,7 @@ export default function Landing({ onPlay, onSkip }: Props) {
       <section className="border-t border-white/5 bg-slate-900/50 px-6 py-8">
         <div className="mx-auto max-w-sm text-center">
           <a
-            href="https://github.com/LIN4CRE/KushCloud#readme"
+            href="https://github.com/DLinacre/KushCloud#readme"
             target="_blank"
             rel="noreferrer"
             className="mb-4 inline-flex items-center gap-2 rounded-xl bg-gradient-to-b from-slate-600 to-slate-700 px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:from-slate-500 hover:to-slate-600"
@@ -87,8 +87,8 @@ export default function Landing({ onPlay, onSkip }: Props) {
             ⭐ Star on GitHub
           </a>
           <div className="mt-4 flex justify-center gap-4 text-xs text-slate-500">
-            <a href="https://github.com/LIN4CRE/KushCloud/blob/main/docs/privacy-policy.md" target="_blank" rel="noreferrer" className="underline hover:text-slate-300">Privacy</a>
-            <a href="https://github.com/LIN4CRE/KushCloud/blob/main/docs/accessibility-statement.md" target="_blank" rel="noreferrer" className="underline hover:text-slate-300">Accessibility</a>
+            <a href="https://github.com/DLinacre/KushCloud/blob/main/docs/privacy-policy.md" target="_blank" rel="noreferrer" className="underline hover:text-slate-300">Privacy</a>
+            <a href="https://github.com/DLinacre/KushCloud/blob/main/docs/accessibility-statement.md" target="_blank" rel="noreferrer" className="underline hover:text-slate-300">Accessibility</a>
           </div>
           <p className="mt-4 text-[10px] text-slate-600">
             Flappy Bird-style · React · TypeScript · Canvas 2D · Web Audio · Firebase

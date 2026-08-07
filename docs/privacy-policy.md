@@ -4,7 +4,7 @@
 
 ## 1. Introduction
 
-KushCloud ("we," "our," or "us") is an open-source web game available at [https://lin4cre.github.io/KushCloud/](https://lin4cre.github.io/KushCloud/). This Privacy Policy explains how we collect, use, and protect your information when you play KushCloud.
+KushCloud ("we," "our," or "us") is an open-source web game available at [https://dlinacre.github.io/KushCloud/](https://dlinacre.github.io/KushCloud/). This Privacy Policy explains how we collect, use, and protect your information when you play KushCloud.
 
 ## 2. Information We Collect
 
@@ -74,9 +74,9 @@ We may update this Privacy Policy from time to time. Changes will be reflected i
 ## 8. Contact
 
 For questions about this Privacy Policy, please open an issue on GitHub:  
-[https://github.com/LIN4CRE/KushCloud/issues](https://github.com/LIN4CRE/KushCloud/issues)
+[https://github.com/DLinacre/KushCloud/issues](https://github.com/DLinacre/KushCloud/issues)
 
 ## 9. Open Source
 
 KushCloud is open-source software licensed under the MIT License. You can review the complete source code at:  
-[https://github.com/LIN4CRE/KushCloud](https://github.com/LIN4CRE/KushCloud)
+[https://github.com/DLinacre/KushCloud](https://github.com/DLinacre/KushCloud)

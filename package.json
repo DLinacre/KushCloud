@@ -76,10 +76,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/LIN4CRE/KushCloud.git"
+    "url": "https://github.com/DLinacre/KushCloud.git"
   },
-  "homepage": "https://lin4cre.github.io/KushCloud/",
+  "homepage": "https://dlinacre.github.io/KushCloud/",
   "bugs": {
-    "url": "https://github.com/LIN4CRE/KushCloud/issues"
+    "url": "https://github.com/DLinacre/KushCloud/issues"
   }
 }

@@ -9,7 +9,7 @@
 <p align="center"><i>A chill one-tap arcade flyer — tap to fly, dodge the jars, grab the leaves.</i></p>
 
 <p align="center">
-  <a href="https://lin4cre.github.io/KushCloud/" target="_blank"><strong>🌐 Play Now</strong></a>
+  <a href="https://dlinacre.github.io/KushCloud/" target="_blank"><strong>🌐 Play Now</strong></a>
 </p>
 
 <p align="center">
@@ -63,7 +63,7 @@ Flap through the gaps between glass jars. Score points, collect coins, chain com
 
 ```bash
 # Clone the repo
-git clone https://github.com/LIN4CRE/KushCloud.git
+git clone https://github.com/DLinacre/KushCloud.git
 cd KushCloud
 
 # Install & run
@@ -155,7 +155,7 @@ always a billing/entitlement issue on the account.
 3. Then trigger a deploy: **Actions → "Deploy Web to GitHub Pages" → Run
    workflow** (or push any commit — the game auto-redeploys).
 
-Verify: the live game loads at **lin4cre.github.io/KushCloud** with real
+Verify: the live game loads at **dlinacre.github.io/KushCloud** with real
 gameplay (the current live build is stale/broken from the blocked deploys).
 
 ### Step 2 — Publish the Firebase rules (cross-device leaderboard)
