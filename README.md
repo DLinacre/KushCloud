@@ -136,3 +136,4 @@ MIT License — See [LICENSE](./LICENSE)
   <img src="https://img.shields.io/badge/Made_with-🌿-22c55e?style=flat-square" alt="Made with 🌿" />
   <img src="https://img.shields.io/badge/No_external_assets-Zero_audio_files-06b6d4?style=flat-square" alt="No external assets" />
 </p>
+
