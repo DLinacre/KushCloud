@@ -4,7 +4,7 @@
 
 | Role | Responsibility | Current |
 |------|---------------|---------|
-| **Maintainer** | Merge authority, release management, security response | [@LIN4CRE](https://github.com/LIN4CRE) |
+| **Maintainer** | Merge authority, release management, security response | [@DLinacre](https://github.com/DLinacre) |
 | **Contributor** | Code contributions via PR | Community |
 | **Reporter** | Bug reports, feature requests | Community |
 
