@@ -34,7 +34,6 @@ jobs:
 
       - name: Lint
         run: npm run lint
-        continue-on-error: true  # ESLint 10 / typescript-eslint tooling incompatibility; non-blocking
 
       - name: Type check
         run: npm run typecheck

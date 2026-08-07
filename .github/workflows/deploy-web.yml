@@ -43,7 +43,6 @@ jobs:
 
       - name: Lint
         run: npm run lint
-        continue-on-error: true  # ESLint 10 tooling bug; non-blocking
 
       - name: Type check
         run: npm run typecheck
