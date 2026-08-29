@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#22c55e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="KushCloud" />
+    <meta name="application-name" content="KushCloud" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Primary Meta Tags -->
+    <title>KushCloud — Chill Arcade Flyer | Free Browser Game</title>
+    <meta name="title" content="KushCloud — Chill Arcade Flyer | Free Browser Game" />
+    <meta name="description" content="A chill one-tap arcade flyer with 8 evolving worlds, 24 unlockable skins, and synthesized audio. Tap to fly, dodge obstacles, and compete on the global leaderboard. Play free in your browser!" />
+    <meta name="keywords" content="flappy bird, arcade game, web game, browser game, free game, canvas game, one tap game, kushcloud" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Linacre" />
+    <meta name="language" content="English" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dlinacre.github.io/KushCloud/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dlinacre.github.io/KushCloud/" />
+    <meta property="og:title" content="KushCloud — Chill Arcade Flyer | Free Browser Game" />
+    <meta property="og:description" content="A chill one-tap arcade flyer with 8 evolving worlds, 24 unlockable skins, and synthesized audio. Play free in your browser!" />
+    <meta property="og:image" content="https://dlinacre.github.io/KushCloud/banner.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="KushCloud game banner — colorful arcade flyer with evolving worlds and unlockable skins" />
+    <meta property="og:site_name" content="KushCloud" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://dlinacre.github.io/KushCloud/" />
+    <meta name="twitter:title" content="KushCloud — Chill Arcade Flyer | Free Browser Game" />
+    <meta name="twitter:description" content="A chill one-tap arcade flyer with 8 evolving worlds, 24 unlockable skins, and synthesized audio. Play free in your browser!" />
+    <meta name="twitter:image" content="https://dlinacre.github.io/KushCloud/banner.png" />
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.firebaseio.com https://*.firebase.com https://www.gstatic.com; connect-src 'self' https://*.firebaseio.com https://*.firebase.com wss://*.firebaseio.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'self'; form-action 'self'; base-uri 'self';" />
+
+    <!-- Referrer Policy -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Performance Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googleapis.com" />
+    <link rel="preconnect" href="https://firestore.googleapis.com" />
+    <link rel="preconnect" href="https://*.firebaseio.com" />
+    <link rel="dns-prefetch" href="https://*.firebaseio.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%23022c22' stroke='%2322c55e' stroke-width='1.5' /%3E%3Cpath d='M24 14c-2 3-3.5 6-3 9s2 5 3 6c1-1 2.5-3 3-6s-1-6-3-9z' fill='%234ade80' /%3E%3Cpath d='M21 18c-3 0-5 2-5 3s2 1 4 0 2-2 1-3z' fill='%234ade80' /%3E%3Cpath d='M27 18c3 0 5 2 5 3s-2 1-4 0-2-2-1-3z' fill='%234ade80' /%3E%3Cpath d='M20 22c-3 1-4 3-3 3s3 0 4-1 1-2-1-2z' fill='%234ade80' /%3E%3Cpath d='M28 22c3 1 4 3 3 3s-3 0-4-1-1-2 1-2z' fill='%234ade80' /%3E%3Ccircle cx='24' cy='24' r='3' fill='%23a3e635' /%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "KushCloud",
+      "url": "https://dlinacre.github.io/KushCloud/",
+      "description": "A chill one-tap arcade flyer with 8 evolving worlds, 24 unlockable skins, and an online leaderboard. Play free in your browser.",
+      "image": "https://dlinacre.github.io/KushCloud/banner.png",
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "playMode": "SinglePlayer",
+      "gamePlatform": "Web Browser",
+      "numberOfPlayers": "1",
+      "inLanguage": "en",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Linacre",
+        "url": "https://github.com/DLinacre"
+      },
+      "genre": ["Arcade", "Casual", "Action"],
+      "license": "https://opensource.org/licenses/MIT"
+    }
+    </script>
+
+    <style>
+      body { background: #0f172a; margin: 0; }
+      .sr-only {
+        position: absolute; width: 1px; height: 1px;
+        padding: 0; margin: -1px; overflow: hidden;
+        clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+      }
+      .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        padding: 8px 16px;
+        background: #22c55e;
+        color: #000;
+        z-index: 9999;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+      *:focus-visible {
+        outline: 2px solid #4ade80;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">
+      Skip to main content
+    </a>
+    <main id="main-content">
+      <div id="root"></div>
+    </main>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
